@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <title>FOOD WAGON-Delivery Services</title>
+    <script src="https://kit.fontawesome.com/267ebb089c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <header>
+    
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center logo" href="#">
+      <img src="images/Mask Group.png" alt="logo">
+      <span class="fw-bold text-warning">food<span class="text-danger">wagon</span></span>
+    </a>
+
+    <!-- Location -->
+    <div class="d-none d-md-flex align-items-center">
+      <span class="me-2 fw-bold text-dark">Deliver to:</span>
+      <i class="fa fa-map-marker text-warning me-1"></i>
+      <span class="nav-location">Current Location <span>Mohammadpur Bus Stand, Dhaka</span></span>
+    </div>
+
+    <!-- Right Side Buttons -->
+    <div class="d-flex align-items-center">
+
+      <!-- Search -->
+      <button class="search-btn me-3 d-none d-md-flex">
+        <i class="fa fa-search"></i> Search Food
+      </button>
+
+      <!-- Login -->
+      <button class="login-btn">
+        <i class="fa fa-user"></i> Login
+      </button>
+    </div>
+  </div>
+      </div>
+    </nav>
+  </header>
+<!-- HERO SECTION -->
+  <main>
+    <section class="container-fluid hero-section mt-5 p-5 ">
+        <div class="container d-flex justify-content-center">
+          <div class=" d-flex row">
+            <div class="col-12 col-md-6 order-2 order-md-1">
+              <h1 class="fw-bold text-white display-4 text-nowrap text-center text-md-start">Are you starving?</h1>
+              <p class="text-dark small text-center text-md-start">within a few clicks, find meals that are accessible near you</p>
+<!-- FORM -->
+              <div class="container bg-light rounded p-2">
+              <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+               
+                  <button class= "nav-item nav-link active mb-3 delivered" data-bs-toggle="pill" data-bs-target="#delivery" 
+                  type="button" role="tab" aria-controls="nav-delivery" aria-selected="true"><i class="fa-solid fa-truck"></i> delivery</button>
+
+                </li>
+                <li class="nav-item" role="presentation">
+                    
+                  <button class="nav-item nav-link pickup" data-bs-toggle="pill" data-bs-target="#pickup" 
+                  type="button" role="tab" aria-controls="nav-pickup" aria-selected="false"><i class="fa-solid fa-truck-pickup"></i>pickup</button>
+                </li>
+              </ul>
+                <div class="tab-content" id="nav-tabcontent">
+                  <div class="tab-pane fade show active" id="delivery" role="tablist" aria-labelledby="delivery-tab">
+                    <form action="">
+                      <div class=" d-flex">
+                        <div class="col-md-7">
+                          <label for="inputdelivery" class="form-label d-none">delivery</label>
+                          <input type="text" class="form-control delivery-forms w-100 " id="inputdelivery" placeholder=" Enter your Address">
+                        </div>
+                        <div class="col-md-5 ms-md-4">
+                          <button class="text-nowrap btn find-button"><i class="fa-solid fa-magnifying-glass"></i> find food</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade row" id="pickup" role="tabpanel" aria-labelledby="pickup-tab">
+                    <form action="">
+                        <div class="mb-3">
+                          <label for="customerName " class="form-label">customerName</label>
+                          <input type="text" class="form-control" id="customerName" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="pickupDate" class="form-label">pickup Date</label>
+                          <input type="date" class="form-control" id="pickupDate" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="pickuptime " class="form-label">pickup time</label>
+                          <input type="time" class="form-control" id="pickuptime" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="pickuplocation " class="form-label">pickup location</label>
+                          <select class="form-select" name="" id="pickuplocation" required>
+                            <option value="">school road</option>
+                            <option value="">azikiwe</option> 
+                            <option value="">gate</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <label for="specialinstructions " class="form-label">customerName</label>
+                        <textarea name="" id="specialinstructions" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-info"> submit</button>
+                    </form>
+                  </div>
+                </div>
+            </div>
+          </div>
+<!-- HERO IMAGE -->
+            <div class="col-12 col-md-6 order-1 order-md-2">
+              <img src="images/hero image.png" class="img-fluid " alt="hero img">
+            </div>
+          </div>
+        </div>
+    </section>
+
+ <!--discount section-->
+
+<section class="container py-5">
+  <div class="row g-4">
+    <!-- Product Card 1 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card product-card position-relative">
+        <img src="images/10%.png" class="card-img-top" alt="Product Image">
+        
+        <!-- Discount Badge -->
+        <div class="discount-badge">
+          <span class="main">10</span>
+          <div class="sub">
+            <span class="percent">%</span>
+            <span class="off">off</span>
+          </div>
+        </div>
+
+        <div class="card-body text-center">
+          <h5 class="card-title">GREYS VEGE</h5>
+          <a href="#" class="btn" style="background-color: rgba(241, 114, 40, 0.2);">6 days remaining</a>
+        </div>
+      </div>
+      </div>
+    
+
+    <!-- CARD 2 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card product-card position-relative">
+        <img src="images/20%.png" class="card-img-top" alt="Product Image">
+        <div class="discount-badge">
+          <span class="main">20</span>
+          <div class="sub">
+            <span class="percent">%</span>
+            <span class="off">off</span>
+          </div>
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">GREYS VEGE</h5>
+          <a href="#" class="btn" style="background-color: rgba(241, 114, 40, 0.2);">6 days remaining</a>
+        </div>
+      </div>
+    </div>
+
+    <!--  card 3 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card product-card position-relative">
+        <img src="images/20%.png" class="card-img-top" alt="Product Image">
+        <div class="discount-badge">
+          <span class="main">20</span>
+          <div class="sub">
+            <span class="percent">%</span>
+            <span class="off">off</span>
+          </div>
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">GREYS VEGE</h5>
+          <a href="#" class="btn" style="background-color: rgba(241, 114, 40, 0.2);">6 days remaining</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 4 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card product-card position-relative">
+        <img src="images/20%.png" class="card-img-top" alt="Product Image">
+        <div class="discount-badge">
+          <span class="main">20</span>
+          <div class="sub">
+            <span class="percent">%</span>
+            <span class="off">off</span>
+          </div>
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">GREYS VEGE</h5>
+          <a href="#" class="btn" style="background-color: rgba(241, 114, 40, 0.2);">6 days remaining</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--how it works-->
+<section class="how-it-works-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold">How Does It Work?</h2>
+    <div class="row g-4 text-center">
+
+      <!-- Step 1: Location -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="p-4 h-100 location">
+          <img src="images/Group.png" height="80px">
+          <h5 class="fw-semibold">Select Location</h5>
+          <p class="text-muted">choose where your food will be delivered address.</p>
+        </div>
+      </div>
+
+      <!-- Step 2: Choose Order -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="p-4 h-100 location">
+        <img src="images/menu 2.png" height="100px">
+          <h5 class="fw-semibold">Choose order</h5>
+          <p class="text-muted">check over hundreds of the menus to pick your favorite food.</p>
+        </div>
+      </div>
+
+      <!-- Step 3: Payment -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="p-4 h-100 location">
+         <img src="images/Icons.png" height="100px">
+          <h5 class="fw-semibold">Pay Advaced</h5>
+          <p class="text-muted">its quick, safe, and simple. select serval methods of payment.</p>
+        </div>
+      </div>
+
+      <!-- Step 4: Receive Order -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="p-4 h-100 location">
+         <img src="images/Donut.png" height="90px">
+          <h5 class="fw-semibold">Enjoy your meals</h5>
+          <p class="text-muted">Food is made and delivered directly to your home.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--popular items-->
+<section class="popular-items py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Popular Items</h2>
+    <div id="popularItemsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="owl-carousel owl-theme carousel-item active">
+          <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+              <div class="card h-100 text-center">
+                <img src="images/cheesbu.png" class="card-img-top img-fluid" alt="Burger">
+                <div class="card-body">
+                  <h5 class="card-title">Cheese Burger</h5>
+                  <p class="text-muted">$3.99</p>
+                  <button class="btn btn-warning">Order Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4">
+              <div class="card h-100 text-center">
+                <img src="images/tofe.png" class="card-img-top img-fluid" alt="Pizza">
+                <div class="card-body">
+                  <h5 class="card-title">Tofe's Cake</h5>
+                  <p class="text-muted">$4.00</p><br>
+                  <button class="btn btn-warning">Order Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4">
+              <div class="card h-100 text-center">
+                <img src="images/feature3.png" class="card-img-top img-fit" alt="Tacos">
+                <div class="card-body">
+                  <h5 class="card-title">Dan's Cake</h5>
+                  <p class="text-muted">$1.99</p><br><br>
+                  <button class="btn btn-warning">Order Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4">
+              <div class="card h-100 text-center">
+                <img src="images/slide5.png" class="card-img-top img-fit" alt="Pasta">
+                <div class="card-body">
+                  <h5 class="card-title">Cripsy sandwitch</h5>
+                  <p class="text-muted">$3.00</p>
+                  <button class="btn btn-warning">Order Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4">
+              <div class="card h-100 text-center">
+                <img src="images/slide6.png" class="card-img-top" alt="Salad">
+                <div class="card-body">
+                  <h5 class="card-title">thai soup</h5>
+                  <p class="text-muted">$2.00</p><br>
+                  <button class="btn btn-warning">Order Now</button>
+                </div>
+              </div>
+            </div>
+            <!--card 6-->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4">
+              <div class="card h-100 text-center">
+                <img src="images/feature8.png" class="card-img-top img-fit" alt="Salad">
+                <div class="card-body">
+                  <h5 class="card-title">Chicken Wrap</h5>
+                  <p class="text-muted">$2.50</p><br><br>
+                  <button class="btn btn-warning">Order Now</button>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ARROW CONTROLS -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#popularItemsCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#popularItemsCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div>
+</section>
+
+<section class="container py-5">
+  <h2 class="mb-4 align-center">Featured Restaurants</h2>
+  <div class="row g-4">
+
+    <!-- Restaurant Card -->
+    <div class="col-md-4">
+      <div class="card shadow-sm position-relative h-100">
+        <!-- Fast Button -->
+        <button class="btn btn-warning btn-sm position-absolute top-0 start-0 m-2">Fast</button>
+
+        <!-- Discount Badge -->
+        <span class="badge position-absolute top-0 end-0 m-2" style="background-color: rgba(241, 114, 40, 1);">
+          <i class="fas fa-tag me-1"></i>20% Off
+        </span>
+
+        <!-- Food Image -->
+        <img src="images/feature1.png" class="card-img-top" alt="Pizza">
+        <div class="card-body">
+          <div class="container"><div class="row"><div class="col-2"><img class="img-fluid" src="images/foodworld.png"></div><div class="col-7"><h5 class="card-title">Foodworld</h5></div></div></div>
+          <div class="mb-2">
+            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+            <span class="text-muted">(4.0)</span>
+          </div>
+          <span class="badge bg-success">Opens Tomorrow</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Restaurant Card -->
+    <div class="col-md-4">
+      <div class="card shadow-sm position-relative h-100">
+        <button class="btn btn-warning btn-sm position-absolute top-0 start-0 m-2">Fast</button>
+        <span class="badge position-absolute top-0 end-0 m-2" style="background-color: rgba(241, 114, 40, 1);" >
+          <i class="fas fa-tag me-1"></i>15% Off
+        </span>
+        <img src="images/feature2.png" class="card-img-top" alt="Sushi">
+        <div class="card-body">
+          <div class="container"><div class="row"><div class="col-2"><img class="img-fluid" src="images/pizza.png"></div><div class="col-4"><h5 class="card-title">Pizzahub</h5></div></div></div>
+          <div class="mb-2">
+            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="text-muted">(5.0)</span>
+          </div>
+          <span class="badge bg-danger">Opens Tomorrow</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Restaurant Card -->
+    <div class="col-md-4">
+      <div class="card shadow-sm position-relative h-100">
+        <button class="btn btn-warning btn-sm position-absolute top-0 start-0 m-2">Fast</button>
+        <span class="badge position-absolute top-0 end-0 m-2" style="background-color: rgba(241, 114, 40, 1);" >
+          <i class="fas fa-tag me-1"></i>15% Off
+        </span>
+        <img src="images/feature3.png" class="card-img-top" alt="Burger">
+        <div class="card-body">
+          <div class="container"><div class="row"><div class="col-2"><img class="img-fluid" src="images/donuts.png"></div><div class="col-5"><h5 class="card-title">Donuts hut</h5></div></div></div>
+          <div class="mb-2">
+            <span class="text-warning">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+            <span class="text-muted">(3.0)</span>
+          </div>
+          <span class="badge bg-success">Opens Tomorrow</span>
+        </div>
+      </div>
+    </div>
+<!--Resturant Card-->
+<div class="col-md-4">
+  <div class="card shadow-sm position-relative h-100">
+    <button class="btn btn-warning btn-sm position-absolute top-0 start-0 m-2">Fast</button>
+    <span class="badge position-absolute top-0 end-0 m-2" style="background-color: rgba(241, 114, 40, 1);" >
+      <i class="fas fa-tag me-1"></i>10% Off
+    </span>
+    <img src="images/feature4.png" class="card-img-top" alt="Salad">
+    <div class="card-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <img class="img-fluid" src="images/hut.png">
+          </div>
+          <div class="col-5">
+            <h5 class="card-title">Donuts hut</h5>
+          </div>
+        </div>
+      </div>
+      <div class="mb-2">
+        <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+        <span class="text-muted">(4.0)</span>
+</div>
+      <span class="badge bg-success">Opens Tomorrow</span>
+    </div>
+  </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card shadow-sm position-relative h-100">
+      <button class="btn btn-warning btn-sm position-absolute top-0 start-0 m-2">Fast</button>
+      <span class="badge position-absolute top-0 end-0 m-2" style="background-color: rgba(241, 114, 40, 1);" >
+        <i class="fas fa-tag me-1"></i>15% Off
+      </span>
+      <img src="images/feature5.png" class="card-img-top" alt="Dessert">
+      <div class="card-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-2">
+              <img class="img-fluid" src="images/ruby.png">
+            </div>
+            <div class="col">
+              <h5 class="card-title">Ruby Tuesday</h5>
+            </div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="text-muted">(4.0)</span>
+        </div>
+        <span class="badge bg-success">Opens Tomorrow</span>
+      </div>
+    </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card shadow-sm position-relative h-100">
+        <button class="btn btn-warning btn-sm position-absolute top-0 start-0 m-2">Fast</button>
+        <span class="badge position-absolute top-0 end-0 m-2" style="background-color: rgba(241, 114, 40, 1);">
+          <i class="fas fa-tag me-1"></i>15% Off
+        </span>
+        <img src="images/feature6.png" class="card-img-top" alt="Pasta">
+        <div class="card-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-2">
+                <img class="img-fluid" src="images/KFC.png">
+              </div>
+              <div class="col">
+                <h5 class="card-title">Kuataka Fried Chicken</h5>
+              </div>
+            </div>
+          </div>
+          <div class="mb-2">
+            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+            <span class="text-muted">(4.0)</span>
+            </div>
+            <span class="badge bg-success">Opens Tomorrow</span>
+            </div>
+            </div>
+           </div>
+    <div class="col-md-4">
+      <div class="card shadow-sm position-relative h-100">
+        <button class="btn btn-warning btn-sm position-absolute top-0 start-0 m-2">Fast</button>
+        <span class="badge  position-absolute top-0 end-0 m-2" style="background-color: rgba(241, 114, 40, 1);">
+          <i class="fas fa-tag me-1"></i>15% Off
+        </span>
+        <img src="images/feature7.png" class="card-img-top" alt="Pasta">
+        <div class="card-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-2">
+                <img class="img-fluid" src="images/RedSquare.png">
+              </div>
+              <div class="col">
+                <h5 class="card-title">Red Square</h5>
+              </div>
+            </div>
+          </div>
+          <div class="mb-2">
+            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+            <span class="text-muted">(4.0)</span>
+            </div>
+            <span class="badge bg-success">Opens Tomorrow</span>
+            </div>
+            </div>  
+            </div>
+    <div class="col-md-4">
+      <div class="card shadow-sm position-relative h-100">
+        <button class="btn btn-warning btn-sm position-absolute top-0 start-0 m-2">Fast</button>
+        <span class="badge  position-absolute top-0 end-0 m-2" style="background-color: rgba(241, 114, 40, 1);">
+          <i class="fas fa-tag me-1"></i>15% Off
+        </span>
+        <img src="images/feature8.png" class="card-img-top" alt="Pasta">
+        <div class="card-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-2">
+                <img class="img-fluid" src="images/taco.png">
+              </div>
+              <div class="col-4">
+                <h5 class="card-title">Taco Bell</h5>
+              </div>
+            </div>
+          </div>
+          <div class="mb-2">
+            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+            <span class="text-muted">(4.0)</span>
+            </div>
+            <span class="badge bg-success">Opens Tomorrow</span>
+            </div>
+            </div>
+            </div>  
+            </div>
+              <!-- View All Button -->
+  <div class="text-center mt-4">
+    <a href="#" class="btn text-white px-4 py-2" style="background: linear-gradient(90deg, #FFBA26, #FF9A0E); border: none;">
+      View All
+    </a>
+  </div>
+            </section> 
+       <!-- Search by Food Section -->
+<section class="container py-5"  style="background-color:rgba(254, 250, 241, 1);">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="mb-0">Search by Food</h2>
+    <a href="#" class="btn btn-sm text-white px-3 py-2" style="background: linear-gradient(90deg, #FFBA26, #FF9A0E);">
+      View All
+    </a>
+  </div>
+
+  <div class="row g-4">
+    <!-- Food Item -->
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="card border-0 shadow-sm text-center h-100">
+        <img src="images/search1.png" class="card-img-top rounded-circle p-3" alt="Pizza">
+        <div class="card-body p-2">
+          <h6 class="card-title mb-0">Pizza</h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- Food Item -->
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="card border-0 shadow-sm text-center h-100">
+        <img src="images/search2.png" class="card-img-top rounded-circle p-3" alt="Burger">
+        <div class="card-body p-2">
+          <h6 class="card-title mb-0">Burger</h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- Food Item -->
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="card border-0 shadow-sm text-center h-100">
+        <img src="images/search4.png" class="card-img-top rounded-circle p-3" alt="Sushi">
+        <div class="card-body p-2">
+          <h6 class="card-title mb-0">Sushi</h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- Food Item -->
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="card border-0 shadow-sm text-center h-100">
+        <img src="images/seaech5.png" class="card-img-top rounded-circle p-3" alt="Tacos">
+        <div class="card-body p-2">
+          <h6 class="card-title mb-0">Tacos</h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- Food Item -->
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="card border-0 shadow-sm text-center h-100">
+        <img src="images/search6.png" class="card-img-top rounded-circle p-3" alt="Salad">
+        <div class="card-body p-2">
+          <h6 class="card-title mb-0">Salad</h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- Food Item -->
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="card border-0 shadow-sm text-center h-100">
+        <img src="images/search1.png" class="card-img-top rounded-circle p-3" alt="Fries">
+        <div class="card-body p-2">
+          <h6 class="card-title mb-0">Fries</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container-fluid"> 
+  <div class="row">
+    <div class="col-12">
+      <div class="wavey">
+        <img src="images/Card.png" class="img-fluid w-100" alt="phone">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid"> 
+  <div class="row">
+    <div class="col-12">
+      <div class="wavey">
+        <a href="#"><img src="images/App Download.png" class="img-fluid w-100" alt="phone"></a>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<div class="container">
+  <div class="row align-items-center">
+    <!-- Text Section -->
+    <div class="col-md-6">
+      <h2>Best deals <span style="color: #FFBA26;">Crispy Sandwiches</span></h2>
+      <p>Enjoy the large size of sandwiches. Complete perfect size of sandwiches</p>
+      <br>
+      <br>
+      <button class="btn btn-warning d-block mx-auto"><h5 style="color: white;">PROCEED TO ORDER ></h5></button>
+    </div>
+
+    <!-- Image Section -->
+    <div class="col-md-6">
+      <img src="images/Image.png" class="img-fluid w-100" alt="phone">
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <img src="images/food.png" class="img-fluid w-100" alt="food">
+    </div>
+
+    <div class="col-md-6">
+      <h2>Celebrate parties with <span style="color: #FFBA26;">Fried Chicken</span></h2>
+      <p>Get the best fried chicken smeared with a lip smacking lemon chilli flavor. Check out best deals for fried chicken.</p>
+      <br>
+      <button class="btn btn-warning d-block mx-auto"><h5 style="color: white;">PROCEED TO ORDER ></h5></button>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<div class="container">
+  <div class="row align-items-center">
+    <!-- Text Section -->
+    <div class="col-md-6">
+      <h2>Wanna eat hot and spicy <span style="color: #FFBA26;">Pizza?</span></h2>
+      <p>Pair up with a friend and enjoy the hot and crispy pizza pops. Try it with the best deals.</p>
+      <br>
+      <button class="btn btn-warning d-block mx-auto"><h5 style="color: white;">PROCEED TO ORDER ></h5></button>
+    </div>
+
+    <!-- Image Section -->
+    <div class="col-md-6">
+      <img src="images/Right.png" class="img-fluid w-100" alt="phone">
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<div class="d-flex justify-content-center align-items-center text-center"style="background: url('images/background.png') no-repeat center center/cover; height: 400px;">
+  <h2 class="text-white"><b>Are you ready to order with the best deals?</b></h2>
+  <div>
+  <button class="btn btn-danger"><h5 style="color: white;">PROCEED TO ORDER ></h5></button>
+  </div>
+</div>
+
+<!-- Footer -->
+  <footer class="text-light pt-5 pb-3" style="background-color: black;">
+    <div class="container-fluid">
+      <div class="row">
+
+        <!-- Top Cities -->
+        <div class="col">
+          <h5>Our Top Cities</h5>
+          <div class="row">
+            <div class="col-2">
+              <ul class="list-unstyled small">
+                <a href="#" style="color: white;" class="text-decoration-none"><li>San Francisco</li></a>
+                <a href="#" style="color: white;" class="text-decoration-none"><li>Los Angeles</li></a>
+                <a href="#" style="color: white;" class="text-decoration-none"><li>New York City</li></a>
+                <a href="#" style="color: white;" class="text-decoration-none"><li>Chicago</li></a>
+                <a href="#" style="color: white;" class="text-decoration-none"><li>Columbus</li></a>
+              </ul>
+            </div>
+            <div class="col-2">
+              <ul class="list-unstyled small">
+                <a href="#" style="color: white;" class="text-decoration-none"><li>Miami</li></a>
+                <a href="#" style="color: white;" class="text-decoration-none"><li>Washington DC</li></a>
+                <a href="#" style="color: white;" class="text-decoration-none"><li>Orange County</li></a>
+                <a href="#" style="color: white;" class="text-decoration-none"><li>Phoenix</li></a>
+                <a href="#" style="color: white;" class="text-decoration-none"><li>New Mexico</li></a>
+              </ul>
+            </div>
+            <div class="col-2">
+              <ul class="list-unstyled small">
+                <a href="#" style="color: white;" class="text-decoration-none"><li>San Diego</li></a>
+                <a href="#" style="color: white;" class="text-decoration-none"><li>Seattle</li></a>
+                <a href="#" style="color: white;" class="text-decoration-none"><li>Atlanta</li></a>
+                <a href="#" style="color: white;" class="text-decoration-none"><li>Las Vegas</li></a>
+                <a href="#" style="color: white;" class="text-decoration-none"><li>Albuquerque</li></a>
+              </ul>
+            </div>
+            <div class="col-2">
+              <ul class="list-unstyled small">
+                <a href="#" style="color: white;" class="text-decoration-none"><li>East Bay</li></a>
+                <a href="#" style="color: white;" class="text-decoration-none"><li>Portland</li></a>
+                <a href="#" style="color: white;" class="text-decoration-none"><li>Charlotte</li></a>
+                <a href="#" style="color: white;" class="text-decoration-none"><li>Sacramento</li></a>
+                <a href="#" style="color: white;" class="text-decoration-none"><li>Long Beach</li></a>
+              </ul>
+            </div>
+            <div class="col-2">
+              <ul class="list-unstyled small">
+                <a href="#" style="color: white;" class="text-decoration-none"><li>Nashville</li></a>
+                <a href="#" style="color: white;" class="text-decoration-none"><li>Denver</li></a>
+                <a href="#" style="color: white;" class="text-decoration-none"><li>Oklahoma City</li></a>
+                <a href="#" style="color: white;" class="text-decoration-none"><li>New Orleans</li></a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br>
+        <hr class="border-light">
+        <br><br><br><br>
+        <!-- Company -->
+        <div class="col-lg-2 col-6 mb-4">
+          <h5>Company</h5>
+          <ul class="list-unstyled small">
+            <a href="#" style="color: white;" class="text-decoration-none"><li>About Us</li></a>
+            <a href="#" style="color: white;" class="text-decoration-none"><li>Team</li></a>
+            <a href="#" style="color: white;" class="text-decoration-none"><li>Careers</li></a>
+            <a href="#" style="color: white;" class="text-decoration-none"><li>Blog</li></a>
+            <a href="#" style="color: white;" class="text-decoration-none"><li>Partner with us</li></a>
+            <a href="#" style="color: white;" class="text-decoration-none"><li>Ride with us</li></a>
+          </ul>
+        </div>
+
+        <!-- Support -->
+        <div class="col-lg-2 col-6 mb-4">
+          <h5>Support</h5>
+          <ul class="list-unstyled small">
+            <a href="#" style="color: white;" class="text-decoration-none"><li>Contact</li></a>
+            <a href="#" style="color: white;" class="text-decoration-none"><li>Help & Support</li></a>
+            <a href="#" style="color: white;" class="text-decoration-none"><li>Refund & Cancellation</li></a>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div class="col-lg-2 col-6 mb-4">
+          <h5>Legal</h5>
+          <ul class="list-unstyled small">
+            <a href="#" style="color: white;" class="text-decoration-none"><li>Terms & Conditions</li></a>
+            <a href="#" style="color: white;" class="text-decoration-none"><li>Privacy Policy</li></a>
+            <a href="#" style="color: white;" class="text-decoration-none"><li>Cookie Policy</li></a>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Social -->
+        <div class="col-lg-4 col-12 mb-4">
+          <h5>Follow Us</h5>
+          <br>
+          <div class="mb-3">
+            <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+          </div>
+          <br>
+          <h5>Receive exclusive offers in your mailbox</h5>
+          <br>
+          <form class="d-flex">
+            <input type="text" class="form-control me-2" placeholder="Enter your email">
+            <button class="btn btn-warning text-light">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <hr class="border-light">
+
+      <!-- Bottom Footer -->
+      <div class="small">
+        <div class="text-start">
+        <p class="mb-1">All rights reserved &copy; Your Company, 2021.</p>
+        </div>
+        <div class="text-end">
+        <p class="mb-0">Made with <i class="fa fa-heart text-warning"></i> by Themewagon</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="https://kit.fontawesome.com/267ebb089c.js" crossorigin="anonymous"></script>
+</body>
+</html>
